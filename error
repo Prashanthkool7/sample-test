@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "test.py", line 50, in <module>
+    main()
+  File "test.py", line 16, in main
+    start_browser()
+  File "test.py", line 31, in start_browser
+    browser = Browser('chrome', **executable_path, headless=True)
+  File "/home/ppatnala/python_virtualenvs/oath_tools/lib/python3.6/site-packages/splinter/browser.py", line 64, in Browser
+    return driver(*args, **kwargs)
+  File "/home/ppatnala/python_virtualenvs/oath_tools/lib/python3.6/site-packages/splinter/driver/webdriver/chrome.py", line 43, in __init__
+    self.driver = Chrome(options=options, **kwargs)
+  File "/home/ppatnala/python_virtualenvs/oath_tools/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/home/ppatnala/python_virtualenvs/oath_tools/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 98, in start
+    self.assert_process_still_running()
+  File "/home/ppatnala/python_virtualenvs/oath_tools/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 111, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service ./chromedriver unexpectedly exited. Status code was: 1
